@@ -5,12 +5,14 @@ pipeline {
             steps {
                 sh "echo hello"
               }
+        }
             
         stage('Test'){
             steps {
                 sh "ls -la"
                 sh "touch testfile.txt"
               }
+        }
             
         stage('Deploy'){
             steps {
