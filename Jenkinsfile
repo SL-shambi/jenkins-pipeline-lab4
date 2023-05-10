@@ -9,15 +9,16 @@ pipeline {
             
         stage('Test'){
             steps {
-                sh "ls -la"
+                sh "pwd"
                 sh "touch testfile.txt"
+                sh "ls -la"
               }
         }
             
         stage('Deploy'){
             steps {
-                sh "pwd"
                 sh "rm -f testfile.txt"
+                sh "ls -la"
               }
         }
     }
